@@ -2,11 +2,13 @@
   box-shadow: 0 37.5px 40px -17.5px rgba(0, 0, 0, 0.4),
     46.2px 37.5px 70px -7.5px rgba(0, 0, 0, 0.5);
   width: 100%;
+  min-width: 2em;
   max-width: 25em;
-  aspect-ratio: 1 / 1.1;
+  /* aspect-ratio: 1 / 1.1; */
+  padding-bottom: 110%;
   border-radius: 0.2em;
   contain: strict;
-  padding: 4px;
+  /* padding: 4px; */
   background-color: #1f425f;
   display: flex;
   flex-direction: column;

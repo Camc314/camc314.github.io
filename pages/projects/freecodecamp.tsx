@@ -99,8 +99,8 @@ export default function FreeCodeCamp() {
               <p>{item.description}</p>
               <div className={styles.videoIframeContainer}>
                 <iframe
-                  width="100%"
-                  height="100%"
+                  // width="100%"
+                  // height="100%"
                   src={item.videoLink}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

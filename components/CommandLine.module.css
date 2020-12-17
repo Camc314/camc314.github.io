@@ -20,7 +20,8 @@
 
 .headerButton {
   height: 50%;
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
+  padding-left: 4%;
   border-radius: 50%;
   margin-left: 0.5em;
 }

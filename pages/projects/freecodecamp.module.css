@@ -69,8 +69,15 @@
 .videoItem iframe {
   border-radius: 1em;
   box-shadow: 0px 4px 20px 1px #00000069;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 .videoIframeContainer {
-  aspect-ratio: 16 / 9;
+  /* aspect-ratio: 16 / 9; */
+  position: relative;
+  padding-top: 56.25%;
   width: 100%;
 }

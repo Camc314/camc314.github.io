@@ -79,22 +79,25 @@ export default function CodeBlock({
     <div style={{ marginLeft: marginLeft, width: "100%" }}>
       {type === "code" ? (
         <div className={styles.container}>
-          <div className={styles.codeHeader}>
-            <span>Input</span>
-            <span className={styles.runButton}>Run</span>
-          </div>
-          <div className={styles.codeContainer}>
-            {data.map((line, lineIndex) => (
-              <div key={`L${lineIndex}`} className={styles.lineOfCode}>
-                {line.map((item, itemIndex) => (
-                  <div
-                    key={`L${lineIndex}-I${itemIndex}`}
-                    className={styles.codeItem}
-                    style={{ backgroundColor: item.color, width: item.width }}
-                  />
-                ))}
-              </div>
-            ))}
+          {" "}
+          <div style={{ padding: "4px" }}>
+            <div className={styles.codeHeader}>
+              <span>Input</span>
+              <span className={styles.runButton}>Run</span>
+            </div>
+            <div className={styles.codeContainer}>
+              {data.map((line, lineIndex) => (
+                <div key={`L${lineIndex}`} className={styles.lineOfCode}>
+                  {line.map((item, itemIndex) => (
+                    <div
+                      key={`L${lineIndex}-I${itemIndex}`}
+                      className={styles.codeItem}
+                      style={{ backgroundColor: item.color, width: item.width }}
+                    />
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       ) : (
@@ -102,28 +105,30 @@ export default function CodeBlock({
       )}
       {type === "output" ? (
         <div className={styles.container}>
-          <div className={styles.codeHeader}>
-            <span>Output</span>
-            <span className={styles.runButton}>Confirm</span>
-          </div>
-          <div className={styles.codeContainer}>
-            <div className={styles.testCase}>
-              <IoIosCheckmarkCircleOutline color="greenyellow" size={25} />
-              <div
-                className={`${styles.testCaseResult} ${styles.success}`}
-              ></div>
+          <div style={{ padding: "4px" }}>
+            <div className={styles.codeHeader}>
+              <span>Output</span>
+              <span className={styles.runButton}>Confirm</span>
             </div>
-            <div className={styles.testCase}>
-              <IoIosCloseCircleOutline color="#ff6565" size={25} />
-              <div
-                className={`${styles.testCaseResult} ${styles.failure}`}
-              ></div>
-            </div>
-            <div className={styles.testCase}>
-              <IoIosCheckmarkCircleOutline color="#85ff62" size={25} />
-              <div
-                className={`${styles.testCaseResult} ${styles.success}`}
-              ></div>
+            <div className={styles.codeContainer}>
+              <div className={styles.testCase}>
+                <IoIosCheckmarkCircleOutline color="greenyellow" size={25} />
+                <div
+                  className={`${styles.testCaseResult} ${styles.success}`}
+                ></div>
+              </div>
+              <div className={styles.testCase}>
+                <IoIosCloseCircleOutline color="#ff6565" size={25} />
+                <div
+                  className={`${styles.testCaseResult} ${styles.failure}`}
+                ></div>
+              </div>
+              <div className={styles.testCase}>
+                <IoIosCheckmarkCircleOutline color="#85ff62" size={25} />
+                <div
+                  className={`${styles.testCaseResult} ${styles.success}`}
+                ></div>
+              </div>
             </div>
           </div>
         </div>
