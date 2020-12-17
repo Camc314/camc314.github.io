@@ -31,6 +31,7 @@ const projectData = [
     name: "Free Code Camp",
     description:
       "I have completed over 10 qualifications to improve my professional development.",
+    buttonName: "Learn More",
     link: "/projects/freecodecamp",
   },
 ];
