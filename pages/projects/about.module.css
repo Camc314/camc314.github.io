@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "F37GingerPro-Regular";
+  src: url("../../public/fonts/F37GingerPro-Regular.otf");
+}
+
 .contentContainer {
   width: 100%;
   margin: auto;
@@ -64,4 +69,8 @@
 
 .headingSmall h1 {
   margin: 0;
+}
+
+.contentItem h1 {
+  font-family: "F37GingerPro-Regular";
 }

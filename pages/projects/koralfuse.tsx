@@ -4,7 +4,6 @@ import styles from "./koralfuse.module.css";
 import ProjectItem from "../../components/ProjectItem";
 
 const data = [
-  { heading: "KoralFuse" },
   {
     heading: "Background",
     description: [
@@ -52,7 +51,10 @@ export default function KoralFuse() {
       <div className={styles.contentContainer}>
         {data.map((item, itemIndex) => {
           return (
-            <div key={`contentContainer-${itemIndex}`}>
+            <div
+              key={`contentContainer-${itemIndex}`}
+              className={styles.contentItem}
+            >
               <h1>{item.heading}</h1>
               {item?.description?.map((line, index) => (
                 <p key={`content-${itemIndex}-${index}`}>{line}</p>

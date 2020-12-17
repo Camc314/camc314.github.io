@@ -14,7 +14,11 @@ const data = [
     description:
       "This qualification focuses on the basics: HTML, HTML5, CSS, Accessibility, Flexbox and Grid. These are foundations that are essential to any developer.",
   },
-  { heading: "JavaScript Algorithms and Data Structures", description: "" },
+  {
+    heading: "JavaScript Algorithms and Data Structures",
+    description:
+      "This is all about constructing algorithms to manipulate data. It covers ES6, Regexp, debuigging and types of programming and more. This qualification gave me the understanding of JavaScript to move onto more complex projects using TypeScript and React. ",
+  },
   {
     heading: "Front End Libraries",
     description:
@@ -87,7 +91,7 @@ export default function FreeCodeCamp() {
         {data.map((item, index) => {
           return (
             <div key={`fcc-content-${index}`}>
-              <h1>{item.heading}</h1>
+              <h2>{item.heading}</h2>
               <p>{item.description}</p>
             </div>
           );
@@ -95,7 +99,7 @@ export default function FreeCodeCamp() {
         {data2.map((item, index) => {
           return (
             <div className={styles.videoItem} key={`fcc-video-${index}`}>
-              <h1>{item.title}</h1>
+              <h2>{item.title}</h2>
               <p>{item.description}</p>
               <div className={styles.videoIframeContainer}>
                 <iframe

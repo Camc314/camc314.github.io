@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "./koralfuse.module.css";
+import styles from "./about.module.css";
 import ProjectItem from "../../components/ProjectItem";
 
 const data = [
@@ -28,7 +28,7 @@ const data = [
   },
 ];
 
-export default function KoralFuse() {
+export default function About() {
   const [closing, setClosing] = useState(false);
 
   const handleClose = () => {
@@ -50,7 +50,10 @@ export default function KoralFuse() {
       <div className={styles.contentContainer}>
         {data.map((item, itemIndex) => {
           return (
-            <div key={`contentContainer-${itemIndex}`}>
+            <div
+              key={`contentContainer-${itemIndex}`}
+              className={styles.contentItem}
+            >
               <h1>{item.heading}</h1>
               {item?.description?.map((line, index) => (
                 <p key={`content-${itemIndex}-${index}`}>{line}</p>
