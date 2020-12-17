@@ -29,6 +29,7 @@
   padding-right: 10%;
   display: flex;
   flex-direction: column-reverse;
+  animation: FadeIn 0.5s forwards;
 }
 
 .viewButton {
@@ -92,6 +93,15 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
