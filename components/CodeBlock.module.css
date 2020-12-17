@@ -1,0 +1,80 @@
+.container {
+  box-shadow: 0 37.5px 40px -17.5px rgba(0, 0, 0, 0.4),
+    46.2px 37.5px 70px -7.5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 25em;
+  aspect-ratio: 1 / 1.1;
+  border-radius: 0.2em;
+  contain: strict;
+  padding: 4px;
+  background-color: #1f425f;
+  display: flex;
+  flex-direction: column;
+}
+
+.codeHeader {
+  height: 2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.runButton {
+  margin-left: auto;
+  background-color: blueviolet;
+  border-radius: 0.2em;
+  float: right;
+  padding: 0.1em 0.4em;
+  height: fit-content;
+}
+
+.codeContainer {
+  background-color: #02203c;
+  padding: 0.2em;
+  flex-grow: 1;
+  border-radius: 0.2em;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4) inset;
+}
+
+.lineOfCode {
+  height: 1.1em;
+  width: 100%;
+  margin-bottom: 0.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.codeItem {
+  height: 90%;
+  border-radius: 0.2em;
+  margin-right: 0.3em;
+}
+
+.testCase {
+  width: 95%;
+  background-color: white;
+  height: 2.5em;
+  margin: 2.5%;
+  padding-left: 0.4em;
+  border-radius: 0.2em;
+  display: flex;
+  align-items: center;
+}
+
+.testCaseResult {
+  height: 1.3em;
+  border-radius: 0.2em;
+  width: 60%;
+  margin-left: 0.4em;
+}
+
+.testCaseResult.failure {
+  background-color: #ff6565;
+}
+
+.testCaseResult.success {
+  background-color: #85ff62;
+}

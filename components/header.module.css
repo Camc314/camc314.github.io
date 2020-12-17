@@ -1,0 +1,17 @@
+.headerItemContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+}
+
+.headerItem {
+  min-width: 5em;
+  padding: 0.4em;
+  text-align: center;
+  transition: all ease-in 0.1s;
+}
+
+.headerItem.selected {
+  background-color: aqua;
+  transform: scale(1.15);
+}

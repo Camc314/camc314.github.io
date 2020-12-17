@@ -1,0 +1,66 @@
+.contentContainer {
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+}
+
+.imageContainer {
+  max-width: 90%;
+}
+
+@media (min-width: 600px) {
+  .contentContainer {
+    width: 100%;
+    margin: auto;
+    padding: 2em;
+    max-width: 40em;
+  }
+  .imageContainer {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+.shrink {
+  height: 100vh;
+  animation: shrinkAnimate;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.grow {
+  height: 10vh;
+  animation: growAnimate;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrinkAnimate {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 10vh;
+  }
+}
+
+@keyframes growAnimate {
+  from {
+    height: 10vh;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+.headingSmall {
+  display: flex;
+  background-color: yellow;
+}
+
+.headingSmall h1 {
+  margin: 0;
+}

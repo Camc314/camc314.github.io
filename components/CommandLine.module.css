@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 100%;
+  height: 400px;
+  background: #f8f8f8;
+  border-radius: 0.8em;
+  contain: strict;
+  box-shadow: 0px 4px 9px 1px #00000040;
+}
+
+.containerHeader {
+  width: 100%;
+  height: 2em;
+  background: #d6d6d6;
+  display: flex;
+  align-items: center;
+}
+
+.headerButton {
+  height: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin-left: 0.5em;
+}
+
+.codeContent {
+  padding: 0em 0.5em;
+  font-family: "Consolas", "Courier New", Courier, monospace;
+}
