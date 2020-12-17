@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./jellyfin.module.css";
 import ProjectItem from "../../components/ProjectItem";
@@ -21,6 +21,11 @@ export default function KoralFuse() {
   const handleClose = () => {
     setClosing(true);
   };
+
+  useEffect(() => {
+    document.title = "Jellyfin - Cameron";
+  }, []);
+
   return (
     <div>
       <div

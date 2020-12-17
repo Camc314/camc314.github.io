@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./about.module.css";
 import ProjectItem from "../../components/ProjectItem";
@@ -30,6 +30,10 @@ const data = [
 
 export default function About() {
   const [closing, setClosing] = useState(false);
+
+  useEffect(() => {
+    document.title = "About - Cameron";
+  }, []);
 
   const handleClose = () => {
     setClosing(true);

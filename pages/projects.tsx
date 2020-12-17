@@ -9,6 +9,7 @@ export default function ProjectsPage(): JSX.Element {
   const [d, setD] = useState(`polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)`);
 
   useEffect(() => {
+    document.title = "Projects - Cameron";
     window.addEventListener("scroll", handleScroll);
     handleScroll();
   }, []);

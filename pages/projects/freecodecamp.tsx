@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./freecodecamp.module.css";
 import ProjectItem from "../../components/ProjectItem";
@@ -74,6 +74,11 @@ export default function FreeCodeCamp() {
   const handleClose = () => {
     setClosing(true);
   };
+
+  useEffect(() => {
+    document.title = "FreeCodeCamp - Cameron";
+  }, []);
+
   return (
     <div>
       <div

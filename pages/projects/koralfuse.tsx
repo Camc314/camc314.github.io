@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./koralfuse.module.css";
 import ProjectItem from "../../components/ProjectItem";
@@ -34,6 +34,10 @@ export default function KoralFuse() {
   const handleClose = () => {
     setClosing(true);
   };
+
+  useEffect(() => {
+    document.title = "KoralFuse - Cameron";
+  }, []);
 
   return (
     <div>
