@@ -1,9 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 const links = [
   [
-    { link: "/home", name: "Home" },
-    { link: "/projects", name: "Projects" },
+    { link: "/home", name: "Home", internal: true },
+    { link: "/projects", name: "Projects", internal: true },
   ],
   [
     { link: "https://github.com/camc314", name: "Github" },
@@ -26,11 +27,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
           {links.map((linkL, i) => (
             <div className="flex flex-col gap-y-4" key={`link-col-${i}`}>
-              {linkL.map((link, i2) => (
-                <a href={link.link} key={`link-item-${i}-${i2}`}>
-                  {link.name}
-                </a>
-              ))}
+              {linkL.map((link, i2) =>
+                link.internal ? (
+                  <Link href={link.link} key={`link-item-${i}-${i2}`}>
+                    <a>{link.name}</a>
+                  </Link>
+                ) : (
+                  <a href={link.link} key={`link-item-${i}-${i2}`}>
+                    {link.name}
+                  </a>
+                )
+              )}
             </div>
           ))}
         </div>
