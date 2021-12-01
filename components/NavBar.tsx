@@ -28,7 +28,7 @@ export function NavBar() {
         ))}
         <button
           onClick={() =>
-            theme.setTheme(theme.theme == "dark" ? "light" : "dark")
+            theme.setTheme(theme.resolvedTheme == "dark" ? "light" : "dark")
           }
           className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center hover:ring-2 ring-gray-300 transition-all"
         >
