@@ -11,7 +11,7 @@ const links = [
   ],
   [
     {
-      link: "https://linkedin.com/in/cameron-clark-01483a1a5",
+      link: "https://linkedin.com/in/cameron-clark-web3",
       name: "Linkedin",
     },
     { link: "mailto:cameron.clark@hey.com", name: "Email" },
