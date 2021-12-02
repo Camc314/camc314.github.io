@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Container from "../../components/Container";
 import ContainerWithFooterNav from "../../components/ContainerWithFooterNav";
 
 type project = {
@@ -16,7 +15,7 @@ const projects: project[] = [
   { title: "Project 4", description: "Project Description", link: "" },
 ];
 
-export default function Blog() {
+export default function ProjectsPage() {
   return (
     <ContainerWithFooterNav pageTitle="Projects - Cameron">
       <div className="w-full">
