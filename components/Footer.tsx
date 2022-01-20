@@ -8,7 +8,7 @@ const links = [
   ],
   [
     { link: "https://github.com/camc314", name: "Github" },
-    { link: "https://tiwtter.com/Cameron_C2", name: "Twitter" },
+    { link: "https://twitter.com/Cameron_C2", name: "Twitter" },
   ],
   [
     {
