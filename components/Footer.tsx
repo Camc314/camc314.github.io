@@ -3,7 +3,7 @@ import React from "react";
 
 const links = [
   [
-    { link: "/home", name: "Home", internal: true },
+    { link: "/", name: "Home", internal: true },
     { link: "/projects", name: "Projects", internal: true },
   ],
   [
