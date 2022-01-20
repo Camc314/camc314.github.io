@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import React from "react";
 import { ThemeProvider } from 'next-themes'
 import "../styles/globals.css";
 import 'tailwindcss/tailwind.css'
