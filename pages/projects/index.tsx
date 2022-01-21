@@ -23,7 +23,7 @@ const WikitoolsProjectBackground = () => {
 
 const PersonalProjectBackground = () => {
   return (
-    <div className="bg-white h-full flex flex-col justify-center px-4 shadow-inner">
+    <div className="bg-blue-50 h-full flex flex-col justify-center px-4 shadow-inner text-black">
       <h3 className="font-bold text-lg">Cameron Clark</h3>
       <p className="text-sm">Self-taught developer, computer science student, and athlete.</p>
     </div>
