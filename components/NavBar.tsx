@@ -7,7 +7,7 @@ import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 const linksList = [
   { title: "Home", path: "/" },
   { title: "Projects", path: "/projects" },
-  { title: "Posts", path: "/blog" }
+  // { title: "Posts", path: "/blog" }
 ];
 
 export function NavBar() {
