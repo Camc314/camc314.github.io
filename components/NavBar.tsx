@@ -20,11 +20,11 @@ export function NavBar() {
       <div className="flex items-center justify-between w-full relative max-w-2xl mx-auto pt-8 pb-8">
         {linksList.map((link,i) => (
           <Link href={link.path} key={`${i}-${link.path}`}>
-            <span
+            <a
               className={`py-2 px-3 transition-all hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md ${link.path == router.route ? "font-semibold" : "font-extralight"}`}
             >
               {link.title}
-            </span>
+            </a>
           </Link>
         ))}
         <button
