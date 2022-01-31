@@ -13,7 +13,7 @@ type project = {
 const WikitoolsProjectBackground = () => {
   return (
     <div className="relative w-full h-full">
-      <Image src="/wikitools-background.png" layout="fill" height={192} />
+      <Image src="/wikitools-background.png" layout="fill" />
       <div className="absolute w-full h-full top-0 left-0 flex justify-center items-center font-mono">
         <h2 className="text-2xl font-semibold">wikitools</h2>
       </div>
